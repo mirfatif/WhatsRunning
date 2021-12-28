@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>WhatsRunning Help</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: large;
+            margin: 2px;
+        }
+
+        li {
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        hr {
+            width: 100%;
+            text-align: center;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            height: 0px;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid white;
+        }
+
+        hr.dim {
+            border-top: 1px solid rgba(0, 0, 0, 0.25);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        hr.no-margin {
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        img.small {
+            max-width: 350px;
+            height: auto;
+        }
+
+        img.header {
+            width: auto;
+            max-width: 95%;
+            max-height: 250px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            box-shadow: none;
+        }
+
+        .no-underline {
+            text-decoration: none;
+        }
+
+        .high-top {
+            margin-top: 30px;
+        }
+
+        .high-bottom {
+            margin-bottom: 3%;
+        }
+
+        .indented {
+            margin-left: 40px;
+        }
+
+        div.card {
+            margin: 20px;
+            padding: 15px;
+            border: solid transparent;
+            border-width: thin;
+            border-radius: 10px;
+            display: block;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        p.header {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            background-color: rgb(0, 128, 198);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        document.write("<style>");
+        if (screen.availHeight < screen.availWidth) {
+            var margin = (screen.availWidth - screen.availHeight) / 3;
+            document.write("body { margin-left: " + margin + "px; margin-right: " + margin + "px; }");
+            document.write("p.header { margin-left: -" + (margin - 2) + "px; margin-right: -" + (margin - 2) + "px; }");
+        } else {
+            document.write("div.card { margin-left: 5px; margin-right: 5px; }");
+            document.write("div.header { margin-left: 15px; margin-right: 15px; }");
+        }
+
+        if (screen.availHeight / 3 < 250) {
+            document.write("img.header { max-height: " + (screen.availHeight / 3) + "px; }");
+        }
+
+        if (window.Android) {
+            document.write("ul { padding-left: " + Android.getBulletPadding() + ";}");
+            document.write("ol { padding-left: " + Android.getBulletPadding() + ";}");
+            document.write("p { margin-top: " + Android.getParaMargin() + "; margin-bottom: " + Android.getParaMargin() + ";}");
+            document.write("img { max-width: " + Android.getImgMaxWidth() + "; margin-top: " + Android.getParaMargin() + "; margin-bottom: " + Android.getParaMargin() + ";}");
+            document.write("img.small { max-width: " + Android.getSmallImgMaxWidth() + ";}");
+            document.write("a { color: " + Android.getLinkColor() + "; text-decoration: none; }");
+            document.write(".high-top { margin-top: " + Android.getHighParaMargin() + ";}");
+            document.write(".high-bottom { margin-bottom: " + Android.getHighParaMargin() + ";}");
+            document.write(".indented { margin-left: " + Android.getBulletPadding() + ";}");
+            if (Android.isDarkTheme()) {
+                document.write("div.card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7); }");
+            }
+        }
+
+        document.write("</style>");
+
+        screen.orientation.addEventListener("change", function () {
+            location.reload();
+        });
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        if (window.Android) {
+            document.body.style.backgroundColor = Android.getBgColor();
+            document.body.style.color = Android.getTextColor();
+        }
+    </script>
+
+    <p class="header"><img class="header" src="banner.webp" /></p>
+
+    <div class="card">
+        <h2>Contents</h2>
+
+        <ul>
+            <li><a href="#intro" class="no-underline"><b>What does WhatsRunning do?</b></a></li>
+            <li><a href="#proc-detail" class="no-underline"><b>Process Details</b></a></li>
+            <li><a href="#more-detail" class="no-underline"><b>More Details</b></a></li>
+            <li><a href="#filter-sort-search" class="no-underline"><b>Filtering, Sorting and Search</b></a></li>
+            <li><a href="#watcher" class="no-underline"><b>Process Watcher</b></a></li>
+            <li><a href="#pmx-integration" class="no-underline"><b>Integration with PMX</b></a></li>
+            <li>
+                <a href="#adb-help" class="no-underline"><b>Using WhatsRunning with ADB</b></a>
+                <ul>
+                    <li><a href="#adb-help-11" class="no-underline"><b>Android 11+</b></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#faqs" class="no-underline"><b>FAQs</b></a>
+                <ul>
+                    <li><a href="#faq1" class="no-underline">Why WhatsRunning requires root or ADB access?</a></li>
+                    <li><a href="#faq2" class="no-underline">My device isn't rooted. How can I use WhatsRunning?</a></li>
+                    <li><a href="#faq3" class="no-underline">Why WhatsRunning requires INTERNET permission?</a></li>
+                    <li><a href="#faq4" class="no-underline">How much privacy friendly WhatsRunning is?</a></li>
+                    <li><a href="#faq5" class="no-underline">What's the difference between "CPU Usage" and "CPU Impact" in sorting?</a></li>
+                </ul>
+            </li>
+            <li><a href="#download" class="no-underline"><b>Downloads / Screenshots</b></a></li>
+            <li><a href="#contact-us" class="no-underline"><b>Contact Us</b></a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2 id="intro">What does WhatsRunning do?</h2>
+        <p>WhatsRunning shows you what's running on your device, which includes:</p>
+        <ul>
+            <li>
+                <p><b>Processes</b></p>
+                <p>Almost everything about native processes:</p>
+                <ul>
+                    <li>PPID, PID, UID, GID, groups, child count, thread count</li>
+                    <li>SELinux context, Linux capabilities, CGroups</li>
+                    <li>CPU usage, RAM usage, SWAP usage</li>
+                    <li>CPU priority, I/O priority, OOM kill score</li>
+                    <li>Commandline, executable path, age, I/O (storage) usage</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Android apps</b></p>
+                <p>Details about framework, system and user apps:</p>
+                <ul>
+                    <li>App name, package name, importance, last active time</li>
+                    <li>Tasks (activities) names, running status, last active time</li>
+                    <li>App services names, types, running status, number of clients, start time, last active time</li>
+                    <li>Init and framework services, if applicable</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>Memory usage</b></p>
+                <ul>
+                    <li>Total, free and sparable RAM</li>
+                    <li>RAM used by active apps, cached apps, non-app processes, kernel and ZRAM</li>
+                    <li>Total Swap, usage by apps and non-app processes</li>
+                </ul>
+                <p>These details are definitely going to clear many of your confusions you might have since ever about Android's memory management e.g.</p>
+                <ul>
+                    <li>Why your RAM is always full, even when you are not using many apps?</li>
+                    <li>Which apps' processes are not killed even when you are not using them?</li>
+                    <li>What are cached apps and which of them is on the hit list of Android operating system to be killed next?</li>
+                </ul>
+            </li>
+            <li>
+                <p><b>System Services</b></p>
+                <p>Init (native) and framework (Java) services which keep on running forever.</p>
+            </li>
+            <li>
+                <p><b>Scheduled Tasks</b></p>
+                <p><a href="https://developer.android.com/training/scheduling/alarms">Alarms</a> which may wakeup the device repeatedly, and <a href="https://developer.android.com/reference/android/app/job/JobScheduler">scheduled jobs</a> the apps run in background.</p>
+            </li>
+            <li>
+                <p><b>Auto-Starting Apps</b></p>
+                <p>Apps which start on device boot.</p>
+            </li>
+            <li>
+                <p><b>Wake Locks / Wakeup Calls</b></p>
+                <p>Apps which have been <a href="https://developer.android.com/training/scheduling/wakelock">keeping the device awake</a>. Also a count showing how many times an app awoke the device from sleep.</p>
+            </li>
+            <li>
+                <p><b>Battery Hogs</b></p>
+                <p>A list of the apps running in foreground and/or background longer than the others.</p>
+            </li>
+            <li>
+                <p><b>Battery State</b></p>
+                <p>A service notification showing current state of battery including battery level, temperature, (dis)charge rate, estimated time, average drain rate with display on, off and in doze mode.</p>
+                <p>See <a href="https://mirfatif.github.io/WhatsRunning/#screenshots">screenshots</a> for more details.</p>
+            </li>
+            <li>
+                <p><b>Processes State</b></p>
+                <p>A service notification showing count of running / dead processes and system / user alive apps. See <a href="#watcher">Process Watcher</a> for more details.</p>
+            </li>
+        </ul>
+
+        <p>Also see Github <a href="https://mirfatif.github.io/WhatsRunning">README</a>.</p>
+    </div>
+
+    <div class="card">
+        <h2 id="proc-detail">Process Details</h2>
+        <img src="proc_detail.webp" />
+        <ol>
+            <li>Process name (commandline)</li>
+            <li>PID</li>
+            <li>UID / GID</li>
+            <li>CPU usage</li>
+            <li>RAM / swap usage</li>
+            <li>Android app packages count</li>
+            <li>App tasks (activities) count</li>
+            <li>App services count</li>
+            <li>Process age</li>
+        </ol>
+
+        <p>For more verbose details, please see <a href="https://mirfatif.github.io/WhatsRunning/#screenshots">screenshots</a>.</p>
+    </div>
+
+    <div class="card">
+        <h2 id="more-detail">More Details</h2>
+
+        <p id="alarm_detail"><b>Alarms</b></p>
+        <img src="alarm_detail.webp" />
+        <ol>
+            <li>App name</li>
+            <li>If the alarm will wake up the device</li>
+            <li>When will alarm fire</li>
+        </ol>
+
+        <hr class="dim">
+
+        <p id="sched_job_detail"><b>Scheduled Jobs</b></p>
+        <img src="sched_job_detail.webp" />
+        <ol>
+            <li>App name</li>
+            <li>UID</li>
+            <li>Job service name</li>
+            <li>Conditions which must meet before the job is run</li>
+        </ol>
+
+        <hr class="dim">
+
+        <p id="auto_start_app_detail"><b>Auto-Starting Apps</b></p>
+        <img src="auto_start_app_detail.webp" />
+        <ol>
+            <li>App name</li>
+            <li>Broadcast receiver(s) name</li>
+            <li>UID</li>
+        </ol>
+
+        <hr class="dim">
+
+        <p id="wake_lock_detail"><b>Wake Locks</b></p>
+        <img src="wake_lock_detail.webp" />
+        <img src="kernel_wake_lock_detail.webp" />
+        <ol>
+            <li>App name</li>
+            <li>UID</li>
+            <li>Wake lock name</li>
+            <li>Duration (for how long the lock was held)</li>
+            <li>Count (how many times the lock was held)</li>
+        </ol>
+
+        <hr class="dim">
+
+        <p id="wakeup_call_detail"><b>Wakeup Calls</b></p>
+        <img src="wakeup_call_detail.webp" />
+        <ol>
+            <li>App name</li>
+            <li>UID</li>
+            <li>Alarm name which woke up the device</li>
+            <li>App package name</li>
+            <li>Wakeup count</li>
+        </ol>
+
+        <hr class="dim">
+
+        <p id="battery_hog_detail"><b>Battery Hogs</b></p>
+        <img src="battery_hog_detail.webp" />
+        <ol>
+            <li>App name</li>
+            <li>UID</li>
+            <li>CPU and network usage</li>
+            <li>App's active usage duration</li>
+            <li>App's foreground (high priority) and background (low priority) activity duration</li>
+            <li>Started services total duration</li>
+            <li>Started services count</li>
+            <li>Started service (shown only if enabled in drop-down menu)</li>
+            <li>App name</li>
+            <li>Service name</li>
+            <li>Started service duration</li>
+            <li>Service start count</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h2 id="filter-sort-search">Filtering, Sorting and Search</h2>
+        <p>You can filter out the processes and apps you are not interested in.</p>
+        <p>There's a long list of parameters you can apply to sort the process list.</p>
+        <p>And an even longer list of keywords you can use to search the specific things in the process list you are concerned about.</p>
+        <img class="small" src="search.webp" />
+        <img class="small" src="filter.webp" />
+    </div>
+
+    <div class="card">
+        <h2 id="watcher">Process Watcher</h2>
+        <p>Did you ever wonder:</p>
+        <ul>
+            <li>
+                <p>Which apps are not sleeping when you are sleeping? And they keep on starting and dying, and doing their work without your knowledge? When do they start, which components they use, for how long they are running, how much resources they use, and when they die?</p>
+            </li>
+            <li>
+                <p>Or which app or process is misbehaving on your device, killed and started again and again, wasting your precious battery and other resources? How may times did it restart in the last 24 hours?</p>
+            </li>
+            <li>
+                <p>Or which process looks like an alien, a malware, a threat to your privacy?</p>
+            </li>
+        </ul>
+        <p>Process Watcher is a single and simple answer to all of these questions. It keeps running in the background with your consent, watching processes continuously. A notification is persistently showing a brief summary of the processes life and death.</p>
+        <img class="small" src="watcher.webp" />
+
+        <p>You tap on the notification or "Show watcher data" menu item to see which processes have started and stopped since the watcher was started. Simple!</p>
+        <img class="small" src="show_watcher_data.webp" />
+
+        <p>Use the menu items to see the list of all processes or those with some change in their state.</p>
+        <img class="small" src="show_all_processes.webp" />
+        <img class="small" src="show_changed_processes.webp" />
+
+        <p>PID field shows how many times the process has been recreated since the watcher started.</p>
+        <img class="small" src="recreated.webp" />
+        <p>In this mode an average consumption of resources (CPU, RAM etc.) is shown for every process instead of the instantaneous values.</p>
+
+        <hr class="dim">
+
+        <p><b>Please note that</b> due to the limitations of common Android devices, Process Watcher is not a realtime Linux process tracker. So it can miss very short-lived processes. If you are interested in the technical details, please read this great article: <a href="https://natanyellin.com/posts/tracking-running-processes-on-linux/">The Difficulties of Tracking Running Processes on Linux</a>.</p>
+    </div>
+
+    <div class="card">
+        <h2 id="pmx-integration">Integration with PMX</h2>
+        <p>WhatsRunning is integrated with <a href="https://github.com/mirfatif/PermissionManagerX">PMX</a> so you can open one from the other.</p>
+        <img class="small" src="pmx_integration1.jpg" />
+        <img class="small" src="pmx_integration2.jpg" />
+        <p>So from WhatsRunning you can switch to PMX to find out what permissions a running (or dead) app is granted.</p>
+        <p>Similarly, from PMX you can switch to WhatsRunning to find out if an app with restricted permissions is still running. If yes, in what state it is and how much resources it is using.</p>
+        <p>This is particularly helpful when analyzing the effect of permissions like <code>RUN_IN_BACKGROUND</code>.</p>
+    </div>
+
+    <div class="card">
+        <h2 id="adb-help">Using WhatsRunning with ADB</h2>
+
+        <p><b><i>Note:</i></b></p>
+        <p>ADB is not as powerful as root is. In our case, for instance, WhatsRunning takes more time to build the list of processes when it's running with ADB.</p>
+        <p>Additionally, on some OEM ROMs the ADB functionality might be crippled due to lacking permissions or other restrictions. You can check the current status of what ADB can do in <b>About</b> -> <b>Privileges</b> (menu item):</p>
+        <img class="small" src="privs.webp" />
+        <p>Unfortunately we cannot do anything about it. And therefore some features are available only on rooted devices.</p>
+        <p>However some OEMs add extra settings to control ADB's privileges. For instance "<i>Disable Permission Monitoring</i>" on Oppo phones and "<i>Allow granting permissions</i>" in Security Settings on Xiaomi phones. See <a href="https://stackoverflow.com/q/52079343/9165920">this question</a> for more details.</p>
+        <p>The following instructions apply to near-AOSP ROMs. Customized ROMs might have different or missing settings.</p>
+
+        <hr class="dim">
+
+        <p class="high-top">So here we start how you can make WhatsRunning work with ADB.</p>
+        <p>If your device is not rooted, you need to turn <b>Wireless ADB</b> on before using WhatsRunning. Some devices have <b><i>ADB over Network</i></b> or <b><i>Wireless Debugging</i></b> setting available in <b>Developer options</b>:</p>
+        <img class="small" src="adb_in_dev_options_1.webp" />
+
+        <p>If you don't have this setting on your device, you need to connect the device to a USB host like PC <b><i>once after every reboot</i></b>.</p>
+
+        <p class="high-top"><b><u>Unhide Developer options screen:</u></b></p>
+        <ol>
+            <li>
+                <p>Go to <b>Settings</b> -> <b>About</b> and tap <b>Build number</b> five to seven times.</p>
+                <p><b>Developer options</b> should appear directly under <b>Settings</b> or in <b>Settings</b> -> <b>System</b> at the bottom.</p>
+            </li>
+        </ol>
+
+        <p class="high-top"><b><u>Enable wireless debugging:</u></b></p>
+        <ol start="2">
+            <li>
+                <p>Enable <b>Android debugging</b> in <b>Developer options</b>.</p>
+            </li>
+            <li>
+                <p>Connect the device to the PC with a USB cable.</p>
+            </li>
+            <li>
+                <p>On PC open a terminal window (or command prompt on Windows) and run:</p>
+                <p><code>adb tcpip 5555</code></p>
+                <p>You must have <code>adb</code> executable available on your PC to run the above command. If not, here's the <a href="https://developer.android.com/studio/releases/platform-tools#downloads">download link</a>.</p>
+            </li>
+        </ol>
+
+        <p class="high-top"><b><u>Optional steps for verification:</u></b></p>
+
+        <ol start="5">
+            <li>
+                <p>Disconnect the USB cable from the device.</p>
+            </li>
+            <li>
+                <p>Connect your device and PC to a common Wi-Fi network.</p>
+            </li>
+            <li>
+                <p>Get the IP address of the device (usually in Wi-Fi settings or in <b>Settings</b> -> <b>About</b>), say it's <code>192.168.1.1</code>.</p>
+            </li>
+            <li>
+                <p>On PC run:</p>
+                <p><code>adb connect 192.168.1.1</code></p>
+            </li>
+            <li>
+                <p>Run again:</p>
+                <p><code>adb shell id -u</code></p>
+                <p>It should print <code>2000</code> (or <code>0</code>).</p>
+            </li>
+        </ol>
+
+        <p class="high-top"><b><u>Connect WhatsRunning to ADB:</u></b></p>
+
+        <ol start="10">
+            <li>
+                <p>Run WhatsRunning app and check <b><i>ADB Shell</i></b> in drawer. Enter port <code>5555</code> and tap connect.</p>
+                <img class="small" src="adb_in_dev_options_2.webp" />
+            </li>
+            <li>
+                <p><i>Allow USB Debugging</i> if asked.</p>
+                <img class="small" src="adb_in_dev_options_3.webp" />
+            </li>
+        </ol>
+
+        <p>Leave the <b>Android debugging</b> enabled.</p>
+        <p>For more details see <a href="https://developer.android.com/studio/command-line/adb#wireless">this</a>.</p>
+
+        <hr class="dim">
+
+        <h3 class="high-top" id="adb-help-11">Android 11+</h3>
+        <p>On Android 11 and above, it's possible to turn on Wireless Debugging without connecting to a PC.</p>
+
+        <ol>
+            <li>
+                <p>Connect your device to a Wi-Fi network.</p>
+            </li>
+            <li>
+                <p>Open WhatsRunning and Developer Options in <a href="https://developer.android.com/guide/topics/large-screens/multi-window-support#split-screen_mode_activation">Split-Screen</a> mode. See instructions above how to unhide Developer Options.</p>
+            </li>
+            <li>
+                <p>Enable <b><i>Wireless debugging</i></b> and <b><i>Disable ADB authorization timeout</i></b> in Developer Options. The latter ensures that you don't have to repeat the next two steps (pairing) again and again.</p>
+                <img class="small" src="adb_in_dev_options_11_1.webp" />
+            </li>
+            <li>
+                <p>Open <b><i>Wireless debugging</i></b> and tap on <i>"Pair device with pairing code"</i>. Note the <b><i>pairing code</i></b> and <b><i>port number</i></b>.</p>
+            </li>
+            <li>
+                <p>In WhatsRunning check <b><i>ADB Shell</i></b> in drawer, enter both parameters in the shown fields, and tap pair.</p>
+                <img class="small" src="adb_in_dev_options_11_2.webp" />
+            </li>
+            <li>
+                <p>After successful pairing now it's time to connect. Enter the new <b><i>port number</i></b> from Wireless debugging in the shown field and tap connect.</p>
+                <img class="small" src="adb_in_dev_options_11_3.webp" />
+            </li>
+        </ol>
+
+        <p>Now you can leave the <b><i>Wireless debugging</i></b> enabled. Or better disable it and leave the <b><i>USB debugging</i></b> enabled.</p>
+
+        <p>If you entirely turn off the debugging in Developer options, or after every reboot, you need to repeat the last step.</p>
+
+        <p>For more details see <a href="https://developer.android.com/studio/command-line/adb#connect-to-a-device-over-wi-fi-android-11+">this</a>.</p>
+    </div>
+
+    <div class="card">
+        <h2 id="faqs">FAQs</h2>
+
+        <hr class="dim" />
+
+        <p id="faq1" class="high-bottom"><b>Why WhatsRunning requires root or ADB access?</b></p>
+        <p>Android won't allow a normal user app to read the process information of other apps, even not completely of its own.</p>
+        <p>That's why we run a separate process with high privileges to circumvent the restrictions.</p>
+        <p>By default, the background process (daemon) is run with ADB UID (<code>2000</code>) or (if rooted) System UID (<code>1000</code>). On rooted devices UID can be changed in <b><i>Advanced Settings</i></b>.</p>
+
+        <hr class="dim" />
+
+        <p id="faq2" class="high-bottom"><b>My device isn't rooted. How can I use WhatsRunning?</b></p>
+        <p><a href="#adb-help">Use with ADB</a>. Please do read the note at the start. There are some limitations; more on some devices.</p>
+
+        <hr class="dim" />
+
+        <p id="faq3" class="high-bottom"><b>Why WhatsRunning requires INTERNET permission?</b></p>
+        <p><code>INTERNET</code> permission is required to make use of ADB over network. The only connections made outside the device are to check for updates (which you can disable in app settings) and to fetch help contents (this webpage).</p>
+        <p>Pro version also requires <code>INTERNET</code> permission for license verification.</p>
+
+        <hr class="dim" />
+
+        <p id="faq4" class="high-bottom"><b>How much privacy friendly WhatsRunning is?</b></p>
+        <p>We are not interested in you or your device at all. We do not spy on you. We do not collect your data in any way, not even the crash logs. We believe in our users being educated, well-informed, and in-charge of their privacy. WhatsRunning strengthens you to protect your privacy.</p>
+        <p>You may also want to see our <a href="https://mirfatif.github.io/WhatsRunning/PRIVACY.html">Privacy Policy</a>.</p>
+
+        <hr class="dim" />
+
+        <p id="faq5" class="high-bottom"><b>What's the difference between "CPU Usage" and "CPU Impact" in sorting?</b></p>
+        <p><i>CPU Impact</i> is simply the time a process spends while using the CPU. <i>CPU Usage</i> is the ratio of CPU time to the age of process.</p>
+        <p>For details see <code>utime</code>, <code>stime</code> and <code>starttime</code> fields under <code>/proc/[PID]/stat</code> in <a href="https://man7.org/linux/man-pages/man5/proc.5.html">proc(5)</a>.</p>
+        <img class="small" src="sort_by_cpu.webp" />
+        <p>So the processes with high CPU Usage and long life, or the processes with high CPU impact and short life should be considered battery hogs.</p>
+        <p>These are just two different ways to analyze and identify the culprits.</p>
+    </div>
+
+    <div class="card">
+        <h2 id="download">Downloads / Screenshots</h2>
+        <p>Please visit Github <a href="https://mirfatif.github.io/WhatsRunning">README</a>.</p>
+
+        <hr>
+
+        <h2 id="contact-us">Have more questions?</h2>
+        <p>Please <a href="https://mirfatif.github.io/WhatsRunning/#want-to-reach-us">contact us</a> via email or Telegram.</p>
+    </div>
+
+</body>
+
+</html>
