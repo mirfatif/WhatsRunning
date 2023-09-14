@@ -15,6 +15,7 @@ Features include:
 - A detailed breakdown of RAM and swap usage
 - System services
 - App services
+- Active apps
 - App state log
 - Scheduled jobs
 - Auto-starting apps
@@ -44,7 +45,7 @@ For more information please see:
 
 ## Screenshots
 
-<img src="screenshots/ss1.png" width="250"> <img src="screenshots/ss2.png" width="250"> <img src="screenshots/ss3.png" width="250"> <img src="screenshots/ss4.png" width="250"> <img src="screenshots/ss5.png" width="250"> <img src="screenshots/ss6.png" width="250"> <img src="screenshots/ss7.png" width="250"> <img src="screenshots/ss8.png" width="250"> <img src="screenshots/ss9.png" width="250"> <img src="screenshots/ss18.png" width="250"> <img src="screenshots/ss10.png" width="250"> <img src="screenshots/ss11.png" width="250"> <img src="screenshots/ss12.png" width="250"> <img src="screenshots/ss13.png" width="250"> <img src="screenshots/ss14.png" width="250"> <img src="screenshots/ss15.png" width="250"> <img src="screenshots/ss16.png" width="250"> <img src="screenshots/ss17.png" width="250">
+<img src="screenshots/ss1.png" width="250"> <img src="screenshots/ss2.png" width="250"> <img src="screenshots/ss3.png" width="250"> <img src="screenshots/ss4.png" width="250"> <img src="screenshots/ss5.png" width="250"> <img src="screenshots/ss6.png" width="250"> <img src="screenshots/ss7.png" width="250"> <img src="screenshots/ss8.png" width="250"> <img src="screenshots/ss9.png" width="250"> <img src="screenshots/ss18.png" width="250"> <img src="screenshots/ss19.png" width="250"> <img src="screenshots/ss10.png" width="250"> <img src="screenshots/ss11.png" width="250"> <img src="screenshots/ss12.png" width="250"> <img src="screenshots/ss13.png" width="250"> <img src="screenshots/ss14.png" width="250"> <img src="screenshots/ss15.png" width="250"> <img src="screenshots/ss16.png" width="250"> <img src="screenshots/ss17.png" width="250">
 
 ## Translations [![Crowdin](https://badges.crowdin.net/wrn/localized.svg)](https://crowdin.com/project/wrn)
 [Crowdin](https://crowdin.com/project/wrn)
