@@ -1,7 +1,7 @@
 # WhatsRunning
 Know what's running on your Android device
 
-<a href="https://mirfatif.github.io/mirfatif/getpro2"><img alt="Get Pro Features" src="https://user-images.githubusercontent.com/33040459/161640215-0bd8f96e-4512-434f-90de-e53d1b2a7bea.png" height="100"></a> <a href="https://play.google.com/store/apps/details?id=com.mirfatif.whatsrunning.ps"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="100"></a>
+<a href="https://mirfatif.github.io/mirfatif/getpro"><img alt="Get Pro Features" src="https://user-images.githubusercontent.com/33040459/161640215-0bd8f96e-4512-434f-90de-e53d1b2a7bea.png" height="100"></a> <a href="https://play.google.com/store/apps/details?id=com.mirfatif.whatsrunning.ps"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="100"></a>
 
 [![Github](https://img.shields.io/github/v/release/mirfatif/WhatsRunning?label="Github")](https://github.com/mirfatif/WhatsRunning/releases/latest) [![Telegram](https://img.shields.io/endpoint?url=https://mirfatif.github.io/mirfatif/wrun_version.json)](https://t.me/mirfatifApps)
 
