@@ -1,37 +1,37 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="WhatsRunning — overview, main features and quick start guide for viewing and managing running Android processes.">
+        <meta name="description" content="常见问题问世：root vs ADB、权限、故障排除和常见的用户场景。">
       
       
         <meta name="author" content="Irfan Latif">
       
       
-        <link rel="canonical" href="https://mirfatif.github.io/WhatsRunning/help/">
+        <link rel="canonical" href="https://mirfatif.github.io/WhatsRunning/help/zh/faqs/">
+      
+      
+        <link rel="prev" href="../versions/">
       
       
       
-        <link rel="next" href="details/">
-      
-      
-      <link rel="icon" href="img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
-        <title>WhatsRunning</title>
+        <title>WhatsRuning 常见问题 - WhatsRunning</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,8 +78,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#processes" class="md-skip">
-          Skip to content
+        <a href="#faq1" class="md-skip">
+          跳转至
         </a>
       
     </div>
@@ -93,10 +93,10 @@
   
 
 <header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="WhatsRunning" class="md-header__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../" title="WhatsRunning" class="md-header__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
       
-  <img src="img/logo.webp" alt="logo">
+  <img src="../../img/logo.webp" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              What does WhatsRunning do?
+              WhatsRuning 常见问题
             
           </span>
         </div>
@@ -163,56 +163,56 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Select language">
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/" hreflang="en" class="md-select__link">
+            <a href="../../faqs/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/de/" hreflang="de" class="md-select__link">
+            <a href="../../de/faqs/" hreflang="de" class="md-select__link">
               Deutsch
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/es/" hreflang="es" class="md-select__link">
+            <a href="../../es/faqs/" hreflang="es" class="md-select__link">
               español
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/fr/" hreflang="fr" class="md-select__link">
+            <a href="../../fr/faqs/" hreflang="fr" class="md-select__link">
               français
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/pt-BR/" hreflang="pt-BR" class="md-select__link">
+            <a href="../../pt-BR/faqs/" hreflang="pt-BR" class="md-select__link">
               português
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/ru/" hreflang="ru" class="md-select__link">
+            <a href="../../ru/faqs/" hreflang="ru" class="md-select__link">
               русский
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/ar/" hreflang="ar" class="md-select__link">
+            <a href="../../ar/faqs/" hreflang="ar" class="md-select__link">
               العربية
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/zh/" hreflang="zh" class="md-select__link">
+            <a href="./" hreflang="zh" class="md-select__link">
               中文
             </a>
           </li>
@@ -233,16 +233,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -253,7 +253,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -289,11 +289,11 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="WhatsRunning" class="md-nav__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
+    <a href="../" title="WhatsRunning" class="md-nav__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
       
-  <img src="img/logo.webp" alt="logo">
+  <img src="../../img/logo.webp" alt="logo">
 
     </a>
     WhatsRunning
@@ -305,201 +305,15 @@
       
   
   
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    What does WhatsRunning do?
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    What does WhatsRunning do?
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#processes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#android-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Android apps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#memory-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Memory usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Services
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#app-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      App Services
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#active-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Active Apps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#app-state-log" class="md-nav__link">
-    <span class="md-ellipsis">
-      App State Log
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scheduled-tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scheduled Tasks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#auto-starting-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Auto-Starting Apps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wake-locks-wakeup-calls" class="md-nav__link">
-    <span class="md-ellipsis">
-      Wake Locks / Wakeup Calls
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#battery-hogs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Battery Hogs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#battery-state" class="md-nav__link">
-    <span class="md-ellipsis">
-      Battery State
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#processes-state" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processes State
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rate-review" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ratings / Reviews / Comments / Upvotes / Stars
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="details/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    User interface explained
+    WhatsRunning 是什么？
     
   </span>
   
@@ -516,12 +330,12 @@
   
   
     <li class="md-nav__item">
-      <a href="filtering/" class="md-nav__link">
+      <a href="../details/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Filtering, Sorting and Search
+    用户界面已被解释
     
   </span>
   
@@ -538,12 +352,12 @@
   
   
     <li class="md-nav__item">
-      <a href="process-watcher/" class="md-nav__link">
+      <a href="../filtering/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Process Watcher
+    筛选、排序和搜索
     
   </span>
   
@@ -560,12 +374,12 @@
   
   
     <li class="md-nav__item">
-      <a href="pmx-integration/" class="md-nav__link">
+      <a href="../process-watcher/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Integration with PMX
+    进程监视器
     
   </span>
   
@@ -582,12 +396,12 @@
   
   
     <li class="md-nav__item">
-      <a href="use-with-adb/" class="md-nav__link">
+      <a href="../pmx-integration/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Using WhatsRunning with ADB
+    与 PMX 集成
     
   </span>
   
@@ -604,12 +418,34 @@
   
   
     <li class="md-nav__item">
-      <a href="versions/" class="md-nav__link">
+      <a href="../use-with-adb/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    WhatsRunning Versions
+    用 ADB 使用 WhatsRunning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../versions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WhatsRuning版本
     
   </span>
   
@@ -631,7 +467,7 @@
   
   
   <span class="md-ellipsis">
-    Paid features
+    付费功能
     
   </span>
   
@@ -645,20 +481,130 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="faqs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    WhatsRuning 常见问题
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    WhatsRunning FAQs
+    WhatsRuning 常见问题
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#faq1" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么WhatsRunning 需要 root 或 ADB 访问？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq2" class="md-nav__link">
+    <span class="md-ellipsis">
+      设备尚未Root， 如何使用WhatsRunning？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq3" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么WhatsRunning 需要 INTNET权限？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq4" class="md-nav__link">
+    <span class="md-ellipsis">
+      隐私友好的WhatsRunning 有多大程度？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq6" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是“孤儿活动/服务”？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq5" class="md-nav__link">
+    <span class="md-ellipsis">
+      在排序中"CPU 使用"和 "CPU 影响"之间有什么区别？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq8" class="md-nav__link">
+    <span class="md-ellipsis">
+      在流程细节中，输入/输出数字显示什么？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq7" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么我看到“进程不存在”提示？
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -675,7 +621,7 @@
   
   
   <span class="md-ellipsis">
-    Downloads
+    下载
     
   </span>
   
@@ -697,7 +643,7 @@
   
   
   <span class="md-ellipsis">
-    Screenshots
+    屏幕截图
     
   </span>
   
@@ -719,7 +665,7 @@
   
   
   <span class="md-ellipsis">
-    Ratings / Reviews / Comments / Upvotes / Stars
+    评分/评论/评论/更新/星星
     
   </span>
   
@@ -741,7 +687,7 @@
   
   
   <span class="md-ellipsis">
-    Contact Us
+    联系我们
     
   </span>
   
@@ -791,7 +737,7 @@
   
   
   <span class="md-ellipsis">
-    Apps
+    应用程序
     
   </span>
   
@@ -802,7 +748,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_14">
             <span class="md-nav__icon md-icon"></span>
-            Apps
+            应用程序
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -818,7 +764,7 @@
   
   
   <span class="md-ellipsis">
-    Permission Manager X
+    权限管理 X
     
   </span>
   
@@ -841,7 +787,7 @@
   
   
   <span class="md-ellipsis">
-    WhatsRunning
+    WhatsRuning
     
   </span>
   
@@ -887,7 +833,7 @@
   
   
   <span class="md-ellipsis">
-    Backopier
+    后台器
     
   </span>
   
@@ -939,7 +885,7 @@
   
   
   <span class="md-ellipsis">
-    Android FAQs
+    Android 常见问题
     
   </span>
   
@@ -950,7 +896,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_15">
             <span class="md-nav__icon md-icon"></span>
-            Android FAQs
+            Android 常见问题
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -966,7 +912,7 @@
   
   
   <span class="md-ellipsis">
-    Frequently Asked Questions
+    常见问题
     
   </span>
   
@@ -1018,7 +964,7 @@
   
   
   <span class="md-ellipsis">
-    ADB Guide
+    ADB 指南
     
   </span>
   
@@ -1029,7 +975,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_16">
             <span class="md-nav__icon md-icon"></span>
-            ADB Guide
+            ADB 指南
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1045,7 +991,7 @@
   
   
   <span class="md-ellipsis">
-    Pair/connect the app to ADB
+    配对/连接应用程序到 ADB
     
   </span>
   
@@ -1079,81 +1025,53 @@
 
 
 
-  <h1>What does WhatsRunning do?</h1>
+  <h1>WhatsRuning 常见问题</h1>
 
-<p>WhatsRunning shows you what's running on your device, which includes:</p>
-<h3 id="processes">Processes<a class="headerlink" href="#processes" title="Permanent link">&para;</a></h3>
-<p>Almost everything about native (Linux) processes:</p>
-<ul>
-<li>PPID, PID, UID, GID, groups, child count, thread count</li>
-<li>SELinux context, Linux capabilities, CGroups</li>
-<li>CPU usage, RAM usage, SWAP usage</li>
-<li>CPU priority, I/O priority, OOM kill score</li>
-<li>Commandline, executable path, age, I/O (storage) usage</li>
-</ul>
-<h3 id="android-apps">Android apps<a class="headerlink" href="#android-apps" title="Permanent link">&para;</a></h3>
-<p>Details about framework, system and user apps:</p>
-<ul>
-<li>App name, package name, importance, last active time</li>
-<li>Tasks (activities) names, running status, last active time</li>
-<li>App services names, types, running status, number of clients, start time, last active time</li>
-<li>Init and framework services, if applicable</li>
-</ul>
-<h3 id="memory-usage">Memory usage<a class="headerlink" href="#memory-usage" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Total, free and sparable RAM</li>
-<li>RAM used by active apps, cached apps, non-app processes, kernel and ZRAM</li>
-<li>Total Swap, usage by apps and non-app processes</li>
-</ul>
-<p>These details are definitely going to clear many of your confusions you might have since ever about Android's memory management e.g.</p>
-<ul>
-<li>Why your RAM is always full, even when you are not using many apps?</li>
-<li>Which apps' processes are not killed even when you are not using them?</li>
-<li>What are cached apps and which of them is on the hit list of Android operating system to be killed next?</li>
-</ul>
-<h3 id="system-services">System Services<a class="headerlink" href="#system-services" title="Permanent link">&para;</a></h3>
-<p>Init (native) and framework (Java) services which keep on running forever.</p>
-<h3 id="app-services">App Services<a class="headerlink" href="#app-services" title="Permanent link">&para;</a></h3>
-<p>Background (<a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background#app_bg_reason_bg_service_started">started</a> and <a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background#app_bg_reason_bg_service_bound">bound</a>), <a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background#app_bg_reason_fg_service">foreground</a> and persistent services running inside app processes.</p>
-<h3 id="active-apps">Active Apps<a class="headerlink" href="#active-apps" title="Permanent link">&para;</a></h3>
-<p>Apps <a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background">actively running</a> in background or foreground, or in <a href="https://mirfatif.github.io/IAnswers/find_cached_android_apps">cached</a> state.</p>
-<h3 id="app-state-log">App State Log<a class="headerlink" href="#app-state-log" title="Permanent link">&para;</a></h3>
-<p>A timestamped log showing apps switching between active and inactive <a href="https://developer.android.com/guide/components/activities/process-lifecycle">states</a>.</p>
-<h3 id="scheduled-tasks">Scheduled Tasks<a class="headerlink" href="#scheduled-tasks" title="Permanent link">&para;</a></h3>
-<p><a href="https://developer.android.com/training/scheduling/alarms">Alarms</a> which may wakeup the device repeatedly, and <a href="https://developer.android.com/reference/android/app/job/JobScheduler">scheduled jobs</a> the apps run in background.</p>
-<h3 id="auto-starting-apps">Auto-Starting Apps<a class="headerlink" href="#auto-starting-apps" title="Permanent link">&para;</a></h3>
-<p>Apps which start on device boot.</p>
-<h3 id="wake-locks-wakeup-calls">Wake Locks / Wakeup Calls<a class="headerlink" href="#wake-locks-wakeup-calls" title="Permanent link">&para;</a></h3>
-<p>Apps which have been <a href="https://developer.android.com/training/scheduling/wakelock">keeping the device awake</a>. Also a count showing how many times an app awoke the device from sleep.</p>
-<h3 id="battery-hogs">Battery Hogs<a class="headerlink" href="#battery-hogs" title="Permanent link">&para;</a></h3>
-<p><span class="dim-text">(Works up to Android 13 only 😞)</span></p>
-<p>A list of the apps running in foreground and/or background longer than the others.</p>
-<h3 id="battery-state">Battery State<a class="headerlink" href="#battery-state" title="Permanent link">&para;</a></h3>
-<p>A service notification showing current state of battery including battery level, temperature, (dis)charge rate, estimated time, average drain rate with display on, off and in doze mode.</p>
-<p>See <a href="https://mirfatif.github.io/WhatsRunning/#screenshots">screenshots</a> for more details.</p>
-<h3 id="processes-state">Processes State<a class="headerlink" href="#processes-state" title="Permanent link">&para;</a></h3>
-<p>A service notification showing count of running / dead processes and system / user alive apps. See <a href="https://mirfatif.github.io/WhatsRunning/help/en/#watcher">Process Watcher</a> for more details.</p>
-<p>Also see Github <a href="https://mirfatif.github.io/WhatsRunning">README</a>.</p>
+<h3 id="faq1">为什么WhatsRunning 需要 root 或 ADB 访问？<a class="headerlink" href="#faq1" title="Permanent link">&para;</a></h3>
+<p>Android 有意限制应用访问其他隐私和安全进程。 因为这些平台安全保障（甚至在应用本身的过程中也限制了某些流程细节）， WhatsRunning需要一个小的特权助手来收集完整的流程信息。</p>
+<p>WhatsRunning没有从应用程序本身绕开系统，而是把它作为一个单独的高级特权过程来运行。 默认情况下，助手运行在 ADB UID (2000) 下, 当通过 ADB 启动时, 或者在系统 UID (1000) 下运行到 root 设备。 如果你有一个Root设备，你可以在 <strong>Advanced Settings</strong> 中更改助手的 UID。</p>
 <hr />
-<p><strong>It's amazing na?</strong> Let's get into details.</p>
-<ul>
-<li><a href="details/">User interface explained</a></li>
-<li><a href="filtering/">Filtering, Sorting and Search</a></li>
-<li><a href="process-watcher/">Process Watcher</a></li>
-<li><a href="pmx-integration/">Integration with PMX</a></li>
-<li><a href="use-with-adb/">Using WhatsRunning with ADB</a></li>
-<li><a href="versions/">WhatsRunning Versions</a></li>
-<li><a href="/WhatsRunning/help/versions/#paid-features">Paid features</a></li>
-<li><a href="faqs/">WhatsRunning FAQs</a></li>
-<li><a href="https://mirfatif.github.io/WhatsRunning">Downloads</a></li>
-<li><a href="https://mirfatif.github.io/WhatsRunning/#screenshots">Screenshots</a></li>
-<li><a href="https://mirfatif.github.io/WhatsRunning/#want-to-reach-us">Contact Us</a></li>
-</ul>
+<h3 id="faq2">设备尚未Root， 如何使用WhatsRunning？<a class="headerlink" href="#faq2" title="Permanent link">&para;</a></h3>
+<p><a href="../use-with-adb/">使用 ADB </a>。 请阅读最开始的提示， 有一些限制；有些限制更多；有些限制更少；另一些限制更少。</p>
 <hr />
-<h2 id="rate-review">Ratings / Reviews / Comments / Upvotes / Stars<a class="headerlink" href="#rate-review" title="Permanent link">&para;</a></h2>
-<p>Play Store <a href="https://play.google.com/store/apps/details?id=com.mirfatif.whatsrunning.ps.pro">Pro version</a> • <a href="https://play.google.com/store/apps/details?id=com.mirfatif.whatsrunning.p">Free version</a></p>
-<p><a href="https://apkpure.com/whatsrunning/com.mirfatif.whatsrunning">APKPure</a> • <a href="https://whatsrunning-demo.en.uptodown.com">UpToDown</a> • <a href="https://forum.xda-developers.com/t/app-7-0-whatsrunning-know-whats-running-on-your-device.4386093">XDA</a> • <a href="https://www.producthunt.com/posts/whatsrunning">ProductHunt</a></p>
-<p><a href="https://github.com/mirfatif/WhatsRunning">Github</a> • <a href="https://androidforums.com/threads/app-7-0-whatsrunning-know-whats-running-on-your-android-device.1342513">AndroidForums</a> • <a href="https://news.ycombinator.com/item?id=32220301">HackerNews</a></p>
+<h3 id="faq3">为什么WhatsRunning 需要 INTNET权限？<a class="headerlink" href="#faq3" title="Permanent link">&para;</a></h3>
+<p>独立的 <a href="https://mirfatif.github.io/mirfatif/getpro">Pro 版本</a> 需要互联网连接才能验证许可证。 另一个 <a href="../versions/">versions</a> - Free and Play Store Pro - 可以完全离线工作。 虽然Play Store应用程序需要互联网连接才能验证许可证。</p>
+<p><code>android.permission.INTERNET</code> 权限的<strong>可选使用</strong>：</p>
+<ul>
+<li>检查更新. 您可以在应用设置中禁用此功能。</li>
+<li>获取帮助您在抽屉中查看此网页的内容 -&gt; 帮助</li>
+</ul>
+<p><code>android.permission.INTERNET</code> 权限的<strong>本地（设备上）使用</strong>：</p>
+<p>安卓系统不允许应用程序在没有<a href="https://developer.android.com/reference/android/Manifest.permission#INTERNET">INTNET权限</a>的情况下创建网络套接字，即使它们仅用于本地而不是互联网连接。 WhatsRunning 通过两种方式利用本地（设备内）连接（即在 <code>127.0.0.1</code>创建 <code>localhost</code> 套接字的能力）实现进程间通信（IPC）：</p>
+<ul>
+<li>WhatsRunning 以 root / ADB 权限开始后台进程，并通过网络套接字对此进程进行讨论。 在最初握手后，这两个进程开始在绑定器上交谈。 我们做这件事没有更好的方法，因为安卓系统也不允许应用程序通过 UNIX 域套接字。</li>
+<li>如果您的设备未获取root权限，且您<a href="../use-with-adb/">通过ADB使用WhatsRunning</a>，则连接 <code>adbd</code> 需要互联网权限。 查看 <a href="https://mirfatif.github.io/PermissionManagerX/help/en/#faq27">PMX 在我上使用 ADB 网络进行间谍活动？</a>。</li>
+</ul>
+<p>因此，如果应用无法创建或使用本地网络套接字，它将失败。 若要阻止WhatsRunning使用互联网，必须确保该应用程序能够通过<a href="https://superuser.com/questions/263142">用于进程间通信的回环接口</a>与设备上的进程进行通信。 这种情况通常出现在基于 <code>iptables</code>的防火墙（如<a href="https://github.com/mirfatif/Fyrypt">Fyrypt</a>）以及基于VPN的防火墙（如NetGuard）中。 但是一些ROM有一个内置功能来禁止网络访问：</p>
+<p><img alt="允许网络访问" class="media" src="../../img/allow_network_access.webp" /></p>
+<p>这不仅会阻止应用使用互联网，而且也会禁用其为 IPC 创建循环套接口的能力。 所以，如果此权限被拒绝，WhatsRunning 将无法获得 root / ADB 权限。</p>
+<hr />
+<h3 id="faq4">隐私友好的WhatsRunning 有多大程度？<a class="headerlink" href="#faq4" title="Permanent link">&para;</a></h3>
+<p>我们对您或您的设备根本不感兴趣。 我们不会对你进行间谍活动。 我们不以任何方式收集您的数据，甚至连崩溃日志也不会收集。 我们相信我们的用户会受到教育，了解情况，并负责他们的隐私。 WhatsRunning 会加强您保护隐私。</p>
+<p>您可能还想查看我们的<a href="https://mirfatif.github.io/WhatsRunning/PRIVACY.html">隐私政策</a>。</p>
+<hr />
+<h3 id="faq6">什么是“孤儿活动/服务”？<a class="headerlink" href="#faq6" title="Permanent link">&para;</a></h3>
+<p>当某个应用程序正在后台运行而未处于活动使用状态， Android 操作系统可能会在任何阶段e杀死其本机过程。 - 免除内存或保护其他资源。 但其活动（明显部分）和服务仍可记录在案，以便日后恢复。 这种组件在WhatsRunning中被称为“无主组件”。</p>
+<hr />
+<h3 id="faq5">在排序中"CPU 使用"和 "CPU 影响"之间有什么区别？<a class="headerlink" href="#faq5" title="Permanent link">&para;</a></h3>
+<p><strong>CPU Impact</strong> 只是一个进程在使用 CPU 时花费的时间。 <strong>CPU 使用率</strong> 是 CPU 时间与流程年龄的比率。</p>
+<p>详情请参阅<a href="https://man7.org/linux/man-pages/man5/proc.5.html">proc(5)</a>中 <code>/proc/[PID]/stat</code> 项下的 <code>utime</code>、 <code>stime</code> 及 <code>starttime</code> 字段。</p>
+<p><img alt="WhatsRunning menu" class="media" src="../../img/sort_by_cpu.webp" /></p>
+<p>因此，CPU 使用率和寿命较高的工艺，或CPU 影响较高和寿命较短的工艺，应视为电池。</p>
+<p>这些只是分析和查明罪犯的两种不同方法。</p>
+<hr />
+<h3 id="faq8">在流程细节中，输入/输出数字显示什么？<a class="headerlink" href="#faq8" title="Permanent link">&para;</a></h3>
+<p><img alt="App IO 使用指南" class="media" src="../../img/app_io_usage.webp" /></p>
+<p>请查看 <a href="https://mirfatif.github.io/IAnswers/android_app_kill_flash_storage">哪个安卓应用正在杀死闪存？</a></p>
+<hr />
+<h3 id="faq7">为什么我看到“进程不存在”提示？<a class="headerlink" href="#faq7" title="Permanent link">&para;</a></h3>
+<p><img alt="WhatsRunning 终止进程警告" class="media" src="../../img/proc_not_exists.webp" /></p>
+<p>这意味着您点击的进程或应用程序或其组件目前未运行， 或已被过滤(在 <a href="../filtering/">Process Filter</a>)。</p>
 
 
 
@@ -1180,7 +1098,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Back to top
+  回到页面顶部
 </button>
         
       </main>
@@ -1226,12 +1144,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
-        <script src="javascript/extra.js"></script>
+        <script src="../../javascript/extra.js"></script>
       
     
   </body>

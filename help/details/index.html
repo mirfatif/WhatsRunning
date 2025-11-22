@@ -6,32 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="WhatsRunning — overview, main features and quick start guide for viewing and managing running Android processes.">
+        <meta name="description" content="Detailed reference for WhatsRunning process details: field definitions, examples and how to interpret Android process information.">
       
       
         <meta name="author" content="Irfan Latif">
       
       
-        <link rel="canonical" href="https://mirfatif.github.io/WhatsRunning/help/">
+        <link rel="canonical" href="https://mirfatif.github.io/WhatsRunning/help/details/">
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="details/">
+      
+        <link rel="next" href="../filtering/">
       
       
-      <link rel="icon" href="img/favicon.ico">
+      <link rel="icon" href="../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
-        <title>WhatsRunning</title>
+        <title>User interface explained - WhatsRunning</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="css/extra.css">
+      <link rel="stylesheet" href="../css/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#processes" class="md-skip">
+        <a href="#process-details" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="WhatsRunning" class="md-header__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
+    <a href=".." title="WhatsRunning" class="md-header__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
       
-  <img src="img/logo.webp" alt="logo">
+  <img src="../img/logo.webp" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              What does WhatsRunning do?
+              User interface explained
             
           </span>
         </div>
@@ -170,49 +172,49 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/de/" hreflang="de" class="md-select__link">
+            <a href="../de/details/" hreflang="de" class="md-select__link">
               Deutsch
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/es/" hreflang="es" class="md-select__link">
+            <a href="../es/details/" hreflang="es" class="md-select__link">
               español
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/fr/" hreflang="fr" class="md-select__link">
+            <a href="../fr/details/" hreflang="fr" class="md-select__link">
               français
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/pt-BR/" hreflang="pt-BR" class="md-select__link">
+            <a href="../pt-BR/details/" hreflang="pt-BR" class="md-select__link">
               português
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/ru/" hreflang="ru" class="md-select__link">
+            <a href="../ru/details/" hreflang="ru" class="md-select__link">
               русский
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/ar/" hreflang="ar" class="md-select__link">
+            <a href="../ar/details/" hreflang="ar" class="md-select__link">
               العربية
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/WhatsRunning/help/zh/" hreflang="zh" class="md-select__link">
+            <a href="../zh/details/" hreflang="zh" class="md-select__link">
               中文
             </a>
           </li>
@@ -291,15 +293,37 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="WhatsRunning" class="md-nav__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
+    <a href=".." title="WhatsRunning" class="md-nav__button md-logo" aria-label="WhatsRunning" data-md-component="logo">
       
-  <img src="img/logo.webp" alt="logo">
+  <img src="../img/logo.webp" alt="logo">
 
     </a>
     WhatsRunning
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    What does WhatsRunning do?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
     
       
       
@@ -320,7 +344,7 @@
   
   
   <span class="md-ellipsis">
-    What does WhatsRunning do?
+    User interface explained
     
   </span>
   
@@ -328,12 +352,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    What does WhatsRunning do?
+    User interface explained
     
   </span>
   
@@ -354,36 +378,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#processes" class="md-nav__link">
+  <a href="#process-details" class="md-nav__link">
     <span class="md-ellipsis">
-      Processes
+      Process Details
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#android-apps" class="md-nav__link">
+  <a href="#memory-info" class="md-nav__link">
     <span class="md-ellipsis">
-      Android apps
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#memory-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Memory usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#system-services" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Services
+      Memory Info
     </span>
   </a>
   
@@ -414,12 +420,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="App State Log">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summary-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary view
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#scheduled-tasks" class="md-nav__link">
+  <a href="#alarms" class="md-nav__link">
     <span class="md-ellipsis">
-      Scheduled Tasks
+      Alarms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheduled-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduled Jobs
     </span>
   </a>
   
@@ -435,9 +465,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wake-locks-wakeup-calls" class="md-nav__link">
+  <a href="#wake-locks" class="md-nav__link">
     <span class="md-ellipsis">
-      Wake Locks / Wakeup Calls
+      Wake Locks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wakeup-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wakeup Calls
     </span>
   </a>
   
@@ -447,33 +486,6 @@
   <a href="#battery-hogs" class="md-nav__link">
     <span class="md-ellipsis">
       Battery Hogs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#battery-state" class="md-nav__link">
-    <span class="md-ellipsis">
-      Battery State
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#processes-state" class="md-nav__link">
-    <span class="md-ellipsis">
-      Processes State
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rate-review" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ratings / Reviews / Comments / Upvotes / Stars
     </span>
   </a>
   
@@ -494,29 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="details/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    User interface explained
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="filtering/" class="md-nav__link">
+      <a href="../filtering/" class="md-nav__link">
         
   
   
@@ -538,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="process-watcher/" class="md-nav__link">
+      <a href="../process-watcher/" class="md-nav__link">
         
   
   
@@ -560,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pmx-integration/" class="md-nav__link">
+      <a href="../pmx-integration/" class="md-nav__link">
         
   
   
@@ -582,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="use-with-adb/" class="md-nav__link">
+      <a href="../use-with-adb/" class="md-nav__link">
         
   
   
@@ -604,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="versions/" class="md-nav__link">
+      <a href="../versions/" class="md-nav__link">
         
   
   
@@ -648,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="faqs/" class="md-nav__link">
+      <a href="../faqs/" class="md-nav__link">
         
   
   
@@ -1079,81 +1069,146 @@
 
 
 
-  <h1>What does WhatsRunning do?</h1>
+  <h1>User interface explained</h1>
 
-<p>WhatsRunning shows you what's running on your device, which includes:</p>
-<h3 id="processes">Processes<a class="headerlink" href="#processes" title="Permanent link">&para;</a></h3>
-<p>Almost everything about native (Linux) processes:</p>
-<ul>
-<li>PPID, PID, UID, GID, groups, child count, thread count</li>
-<li>SELinux context, Linux capabilities, CGroups</li>
-<li>CPU usage, RAM usage, SWAP usage</li>
-<li>CPU priority, I/O priority, OOM kill score</li>
-<li>Commandline, executable path, age, I/O (storage) usage</li>
-</ul>
-<h3 id="android-apps">Android apps<a class="headerlink" href="#android-apps" title="Permanent link">&para;</a></h3>
-<p>Details about framework, system and user apps:</p>
-<ul>
-<li>App name, package name, importance, last active time</li>
-<li>Tasks (activities) names, running status, last active time</li>
-<li>App services names, types, running status, number of clients, start time, last active time</li>
-<li>Init and framework services, if applicable</li>
-</ul>
-<h3 id="memory-usage">Memory usage<a class="headerlink" href="#memory-usage" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Total, free and sparable RAM</li>
-<li>RAM used by active apps, cached apps, non-app processes, kernel and ZRAM</li>
-<li>Total Swap, usage by apps and non-app processes</li>
-</ul>
-<p>These details are definitely going to clear many of your confusions you might have since ever about Android's memory management e.g.</p>
-<ul>
-<li>Why your RAM is always full, even when you are not using many apps?</li>
-<li>Which apps' processes are not killed even when you are not using them?</li>
-<li>What are cached apps and which of them is on the hit list of Android operating system to be killed next?</li>
-</ul>
-<h3 id="system-services">System Services<a class="headerlink" href="#system-services" title="Permanent link">&para;</a></h3>
-<p>Init (native) and framework (Java) services which keep on running forever.</p>
-<h3 id="app-services">App Services<a class="headerlink" href="#app-services" title="Permanent link">&para;</a></h3>
-<p>Background (<a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background#app_bg_reason_bg_service_started">started</a> and <a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background#app_bg_reason_bg_service_bound">bound</a>), <a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background#app_bg_reason_fg_service">foreground</a> and persistent services running inside app processes.</p>
-<h3 id="active-apps">Active Apps<a class="headerlink" href="#active-apps" title="Permanent link">&para;</a></h3>
-<p>Apps <a href="https://mirfatif.github.io/IAnswers/why_android_apps_run_in_background">actively running</a> in background or foreground, or in <a href="https://mirfatif.github.io/IAnswers/find_cached_android_apps">cached</a> state.</p>
-<h3 id="app-state-log">App State Log<a class="headerlink" href="#app-state-log" title="Permanent link">&para;</a></h3>
-<p>A timestamped log showing apps switching between active and inactive <a href="https://developer.android.com/guide/components/activities/process-lifecycle">states</a>.</p>
-<h3 id="scheduled-tasks">Scheduled Tasks<a class="headerlink" href="#scheduled-tasks" title="Permanent link">&para;</a></h3>
-<p><a href="https://developer.android.com/training/scheduling/alarms">Alarms</a> which may wakeup the device repeatedly, and <a href="https://developer.android.com/reference/android/app/job/JobScheduler">scheduled jobs</a> the apps run in background.</p>
-<h3 id="auto-starting-apps">Auto-Starting Apps<a class="headerlink" href="#auto-starting-apps" title="Permanent link">&para;</a></h3>
-<p>Apps which start on device boot.</p>
-<h3 id="wake-locks-wakeup-calls">Wake Locks / Wakeup Calls<a class="headerlink" href="#wake-locks-wakeup-calls" title="Permanent link">&para;</a></h3>
-<p>Apps which have been <a href="https://developer.android.com/training/scheduling/wakelock">keeping the device awake</a>. Also a count showing how many times an app awoke the device from sleep.</p>
-<h3 id="battery-hogs">Battery Hogs<a class="headerlink" href="#battery-hogs" title="Permanent link">&para;</a></h3>
-<p><span class="dim-text">(Works up to Android 13 only 😞)</span></p>
-<p>A list of the apps running in foreground and/or background longer than the others.</p>
-<h3 id="battery-state">Battery State<a class="headerlink" href="#battery-state" title="Permanent link">&para;</a></h3>
-<p>A service notification showing current state of battery including battery level, temperature, (dis)charge rate, estimated time, average drain rate with display on, off and in doze mode.</p>
-<p>See <a href="https://mirfatif.github.io/WhatsRunning/#screenshots">screenshots</a> for more details.</p>
-<h3 id="processes-state">Processes State<a class="headerlink" href="#processes-state" title="Permanent link">&para;</a></h3>
-<p>A service notification showing count of running / dead processes and system / user alive apps. See <a href="https://mirfatif.github.io/WhatsRunning/help/en/#watcher">Process Watcher</a> for more details.</p>
-<p>Also see Github <a href="https://mirfatif.github.io/WhatsRunning">README</a>.</p>
+<h2 id="process-details">Process Details<a class="headerlink" href="#process-details" title="Permanent link">&para;</a></h2>
+<p><img alt="Android process detail" class="media" src="../img/proc_detail.webp" /></p>
+<ol>
+<li>Process name (commandline)</li>
+<li>PID</li>
+<li>UID / GID</li>
+<li>CPU usage</li>
+<li>RAM / swap usage</li>
+<li>Android app packages count</li>
+<li>App tasks (activities) count</li>
+<li>App services count</li>
+<li>Process age</li>
+</ol>
+<p>For more verbose details, please see <a href="https://mirfatif.github.io/WhatsRunning/#screenshots">screenshots</a>.</p>
 <hr />
-<p><strong>It's amazing na?</strong> Let's get into details.</p>
-<ul>
-<li><a href="details/">User interface explained</a></li>
-<li><a href="filtering/">Filtering, Sorting and Search</a></li>
-<li><a href="process-watcher/">Process Watcher</a></li>
-<li><a href="pmx-integration/">Integration with PMX</a></li>
-<li><a href="use-with-adb/">Using WhatsRunning with ADB</a></li>
-<li><a href="versions/">WhatsRunning Versions</a></li>
-<li><a href="/WhatsRunning/help/versions/#paid-features">Paid features</a></li>
-<li><a href="faqs/">WhatsRunning FAQs</a></li>
-<li><a href="https://mirfatif.github.io/WhatsRunning">Downloads</a></li>
-<li><a href="https://mirfatif.github.io/WhatsRunning/#screenshots">Screenshots</a></li>
-<li><a href="https://mirfatif.github.io/WhatsRunning/#want-to-reach-us">Contact Us</a></li>
-</ul>
+<h2 id="memory-info">Memory Info<a class="headerlink" href="#memory-info" title="Permanent link">&para;</a></h2>
+<p>Please see the details <a href="https://mirfatif.github.io/IAnswers/ram_swap_usage_android">here</a>.</p>
 <hr />
-<h2 id="rate-review">Ratings / Reviews / Comments / Upvotes / Stars<a class="headerlink" href="#rate-review" title="Permanent link">&para;</a></h2>
-<p>Play Store <a href="https://play.google.com/store/apps/details?id=com.mirfatif.whatsrunning.ps.pro">Pro version</a> • <a href="https://play.google.com/store/apps/details?id=com.mirfatif.whatsrunning.p">Free version</a></p>
-<p><a href="https://apkpure.com/whatsrunning/com.mirfatif.whatsrunning">APKPure</a> • <a href="https://whatsrunning-demo.en.uptodown.com">UpToDown</a> • <a href="https://forum.xda-developers.com/t/app-7-0-whatsrunning-know-whats-running-on-your-device.4386093">XDA</a> • <a href="https://www.producthunt.com/posts/whatsrunning">ProductHunt</a></p>
-<p><a href="https://github.com/mirfatif/WhatsRunning">Github</a> • <a href="https://androidforums.com/threads/app-7-0-whatsrunning-know-whats-running-on-your-android-device.1342513">AndroidForums</a> • <a href="https://news.ycombinator.com/item?id=32220301">HackerNews</a></p>
+<h2 id="app-services">App Services<a class="headerlink" href="#app-services" title="Permanent link">&para;</a></h2>
+<p><img alt="App services detail" class="media" src="../img/app_service_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>Service name</li>
+<li>Service type: background, foreground, system, persistent etc.</li>
+<li>Number of client apps bound to the service</li>
+<li>When the service was started</li>
+<li>When the service was last active</li>
+<li>App UID</li>
+<li>App state: <font color="#90EE90">running</font> or <font color="#FF0000">stopped</font></li>
+</ol>
+<hr />
+<h2 id="active-apps">Active Apps<a class="headerlink" href="#active-apps" title="Permanent link">&para;</a></h2>
+<p><img alt="Active apps detail" class="media" src="../img/active_apps_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>Count of activities (screens) and services running in the app</li>
+<li>App importance</li>
+<li>When the app started</li>
+<li>When the app was last active</li>
+<li>App UID</li>
+<li>App state: <font color="#90EE90">very active</font>, <font color="#FFC107">less active</font>, or <font color="#FF0000">inactive</font></li>
+<li>Kill score - chances of the app being killed when the device needs to spare RAM</li>
+</ol>
+<hr />
+<h2 id="app-state-log">App State Log<a class="headerlink" href="#app-state-log" title="Permanent link">&para;</a></h2>
+<p><img alt="App state log detail" class="media" src="../img/app_state_log_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>Timestamp - when the app changed its state</li>
+<li>New state (of app package)</li>
+<li>New state (of app UID)</li>
+<li>App UID</li>
+<li>App process PID</li>
+</ol>
+<h3 id="summary-view">Summary view<a class="headerlink" href="#summary-view" title="Permanent link">&para;</a></h3>
+<p>Summary view shows how many times the app has switched to a state since the App State Log was enabled.</p>
+<p><img alt="App state log summary" class="media" src="../img/app_state_log_summary.webp" /></p>
+<ol>
+<li>App name</li>
+<li>New state</li>
+<li>App UID</li>
+<li>Count</li>
+</ol>
+<p>The screenshot shows that the Telegram app has switched to "Foreground Service" state 41 times while the Firefox was opened (switched to "Foreground" state) 35 times.</p>
+<hr />
+<h2 id="alarms">Alarms<a class="headerlink" href="#alarms" title="Permanent link">&para;</a></h2>
+<p><img alt="Android alarm detail" class="media" src="../img/alarm_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>If the alarm will wake up the device</li>
+<li>When will the alarm be raised</li>
+</ol>
+<hr />
+<h2 id="scheduled-jobs">Scheduled Jobs<a class="headerlink" href="#scheduled-jobs" title="Permanent link">&para;</a></h2>
+<p><img alt="Android scheduled job" class="media" src="../img/sched_job_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>UID</li>
+<li>Job service name</li>
+<li>Conditions which must meet before the job is run</li>
+</ol>
+<hr />
+<h2 id="auto-starting-apps">Auto-Starting Apps<a class="headerlink" href="#auto-starting-apps" title="Permanent link">&para;</a></h2>
+<p><img alt="Android auto start app" class="media" src="../img/auto_start_app_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>Broadcast receiver(s) name</li>
+<li>UID</li>
+</ol>
+<hr />
+<h2 id="wake-locks">Wake Locks<a class="headerlink" href="#wake-locks" title="Permanent link">&para;</a></h2>
+<p><img alt="Android wake lock" class="media" src="../img/wake_lock_detail.webp" /> <img alt="Android kernel wake lock" class="media" src="../img/kernel_wake_lock_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>UID</li>
+<li>Wake lock name</li>
+<li>Duration (for how long the lock was held)</li>
+<li>Count (how many times the lock was held)</li>
+</ol>
+<hr />
+<h2 id="wakeup-calls">Wakeup Calls<a class="headerlink" href="#wakeup-calls" title="Permanent link">&para;</a></h2>
+<p><img alt="Android wakeup call" class="media" src="../img/wakeup_call_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>UID</li>
+<li>Alarm name which woke up the device</li>
+<li>App package name</li>
+<li>Wakeup count</li>
+</ol>
+<hr />
+<h2 id="battery-hogs">Battery Hogs<a class="headerlink" href="#battery-hogs" title="Permanent link">&para;</a></h2>
+<p><img alt="Android battery hogs" class="media" src="../img/battery_hog_detail.webp" /></p>
+<ol>
+<li>App name</li>
+<li>UID</li>
+<li>CPU and network usage</li>
+<li>App's active usage duration</li>
+<li>App's foreground (high priority) and background (low priority) activity duration</li>
+<li>Started services total duration</li>
+<li>Started services count</li>
+<li>Started service (shown only if enabled in drop-down menu)</li>
+<li>App name</li>
+<li>Service name</li>
+<li>Started service duration</li>
+<li>Service start count</li>
+</ol>
+<p><strong>Battery Watcher</strong> service shows a persistent notification with battery stats:</p>
+<p><img alt="Android battery watcher" class="media" src="../img/battery_watcher_notif.webp" /></p>
+<ol>
+<li>Battery drain or charge rate; temperature; level; and estimated time (to fully drained or fully charged)</li>
+<li>How long the device has run on battery out of total time</li>
+<li>Battery time when display was on; percentage battery drop per hour</li>
+<li>Battery time when display was off; percentage battery drop per hour</li>
+<li>Battery time when device was <a href="https://source.android.com/docs/core/power/platform_mgmt#doze">dozing</a></li>
+<li>Average battery time per percentage battery drop</li>
+<li>Average network usage per percentage battery drop</li>
+</ol>
+<p>Battery stats can be reset from the top right menu of Battery Hogs screen.</p>
 
 
 
@@ -1226,12 +1281,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant.progress", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "navigation.top", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
-        <script src="javascript/extra.js"></script>
+        <script src="../javascript/extra.js"></script>
       
     
   </body>
