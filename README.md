@@ -27,7 +27,7 @@ Features include:
 and others.
 
 For more information please see:
-- WhatsRunning [**Guide and FAQs**](https://mirfatif.github.io/WhatsRunning/help/help).
+- WhatsRunning [**Guide and FAQs**](https://mirfatif.github.io/WhatsRunning/help).
 - General [**Guide and FAQs**](https://mirfatif.github.io/IAnswers/)
 
 ## Required Privileges / Permissions
