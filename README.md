@@ -37,7 +37,7 @@ For more information please see:
 
 ## Note:
 
-* The app is tested on stock Android 7-16. Some highly customized ROMs may behave unexpectedly.
+* The app is tested on stock Android 7-17. Some highly customized ROMs may behave unexpectedly.
 
 ## Privacy Policy
 
